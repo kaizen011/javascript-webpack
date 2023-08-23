@@ -31,10 +31,19 @@ function createAndAppendElements(){
      const service3 = document.createElement('div');
      const service4 = document.createElement('div');
 
+
+     service1.textContent = 'Hello'
+     service2.textContent = 'Hello'
+     service3.textContent = 'Hello'
+     service4.textContent = 'Hello'
+
+    
+
      services.appendChild(service1);
      services.appendChild(service2);
      services.appendChild(service3);
      services.appendChild(service4);
+
 
 
 }
