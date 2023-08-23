@@ -1,3 +1,5 @@
+import tabElements from "./tab";
+
 function createAndAppendElements(){
 
     const contentDiv = document.getElementById('content');
@@ -33,19 +35,15 @@ function createAndAppendElements(){
     itemi1.textContent = 'Tab1';
     itemi2.textContent = 'Tab2';
 
-    itemi1.classList.add('midtab')
+    itemi1.classList.add('midtab');
 
-    //added click function to clear page
-    itemi.addEventListener('click', function(){
-        contentDiv.innerHTML = '';
-        contentDiv.appendChild();
-    })
 
     ul.appendChild(itemi);
     ul.appendChild(itemi1);
     ul.appendChild(itemi2);
 
     
+
     navbar.appendChild(ul);
 
     contentDiv.appendChild(navbar);
@@ -80,6 +78,10 @@ function createAndAppendElements(){
 
 
      contentDiv.appendChild(services);
+     itemi.addEventListener('click', function(){
+        tabElements(contentDiv);
+    })
+     return contentDiv;
 }
 
 
